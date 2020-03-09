@@ -1,0 +1,16 @@
+# Default values for awscniconfig-app.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+securityGroup: ""
+  # Example Values
+  # sg-123123123123
+
+availavilityZones:
+  # Example Values
+  # - name: eu-central-1a
+  #   subnet: subnet-123123123123
+  # - name: eu-central-1b
+  #   subnet: subnet-456456456456
+  # - name: eu-central-1c
+  #   subnet: subnet-789789789789
