@@ -1,0 +1,35 @@
+apiVersion: application.giantswarm.io/v1alpha1
+kind: App
+metadata:
+  annotations:
+    chart-operator.giantswarm.io/force-helm-upgrade: "true"
+  labels:
+    app-operator.giantswarm.io/version: 1.0.0
+  name: awscniconfig
+  namespace: clusterid
+spec:
+  catalog: default
+  config:
+    configMap:
+      name: ""
+      namespace: ""
+    secret:
+      name: ""
+      namespace: ""
+  kubeConfig:
+    context:
+      name: ""
+    inCluster: true
+    secret:
+      name: ""
+      namespace: ""
+  name: awscniconfig-app
+  namespace: kube-system
+  userConfig:
+   configMap:
+      name: "awscniconfig"
+      namespace: "clusterid"
+    secret:
+      name: ""
+      namespace: ""
+  version: 0.0.1

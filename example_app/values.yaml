@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2020-03-09T13:16:12Z"
+  labels:
+    giantswarm.io/cluster: clusterid
+    giantswarm.io/managed-by: cluster-operator
+    giantswarm.io/organization: giantswarm
+    giantswarm.io/service-type: managed
+  name: awscniconfig
+  namespace: clusterid
+data:
+  values: |
+    securityGroup: sg-123123123123
+
+    availavilityZones:
+      - name: eu-central-1a
+        subnet: subnet-123123123123
+      - name: eu-central-1b
+        subnet: subnet-456456456456
+      - name: eu-central-1c
+        subnet: subnet-789789789789
