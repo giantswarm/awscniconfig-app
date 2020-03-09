@@ -6,7 +6,7 @@ securityGroup: ""
   # Example Values
   # sg-123123123123
 
-availavilityZones:
+availavilityZones: []
   # Example Values
   # - name: eu-central-1a
   #   subnet: subnet-123123123123
